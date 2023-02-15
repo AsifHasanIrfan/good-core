@@ -64,9 +64,68 @@ body {
   .container {
     @apply w-full px-[15px] mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px];
   }
+
   .row {
     @apply flex flex-wrap mx-[-15px];
   }
+
+  .col-md-12 {
+    @apply md:flex-[0_0_100%] md:max-w-full relative w-full px-[15px];
+  }
+  
+  .section-heading {
+    @apply md:text-[48px] text-[26px] font-bold text-[#212125] uppercase md:m-[30px_0] m-[10px_0] tracking-[1px] leading-[1.2];
+  }
+}
+
+.sub-heading {
+  @apply text-[#303234] xlg:text-[27px] text-[16px] xlg:p-[0_0_50px_0] p-[0_0_20px_0];
+}
+
+.sub-content {
+  @apply md:text-[24px] text-[17px] font-normal md:leading-[36px] leading-[26px] max-w-full inline-block text-[#303234] tracking-[1px] m-[10px_0];
+}
+
+.col-12 {
+  @apply flex-[0_0_100%] max-w-full relative w-full px-[15px];
+}
+
+.col-md-3 {
+  @apply md:flex-[0_0_25%] md:max-w-[25%] relative w-full px-[15px];
+}
+.col-md-4 {
+  @apply md:flex-[0_0_33.3333333333%] md:max-w-[33.3333333333%] relative w-full px-[15px];
+}
+
+.col-md-5 {
+  @apply md:flex-[0_0_41.6666666667%] md:max-w-[41.6666666667%] relative w-full px-[15px];
+}
+
+.col-md-6 {
+  @apply md:flex-[0_0_50%] md:max-w-[50%] relative w-full px-[15px];
+}
+
+.col-md-7 {
+  @apply md:flex-[0_0_58.3333333333%] md:max-w-[58.3333333333%] relative w-full px-[15px];
+}
+.col-md-9 {
+  @apply md:flex-[0_0_75%] md:max-w-[75%] relative w-full px-[15px];
+}
+
+.col-lg-3 {
+  @apply lg:flex-[0_0_25%] lg:max-w-[25%] relative w-full px-[15px];
+}
+
+.col-lg-4 {
+  @apply lg:flex-[0_0_33.3333333333%] lg:max-w-[33.3333333333%] relative w-full px-[15px];
+}
+
+.col-lg-6 {
+  @apply lg:flex-[0_0_50%] lg:max-w-[50%] relative w-full px-[15px];
+}
+
+.col-lg-8 {
+  @apply lg:flex-[0_0_66.6666666667%] lg:max-w-[66.6666666667%] relative w-full px-[15px];
 }
 
 svg {
@@ -86,4 +145,46 @@ svg {
   z-index: 22;
   position: relative;
   fill: white !important;
+}
+
+.footer-bottom {
+  border-style: groove;
+}
+
+.menu-item-has-children::after {
+  top: 20px;
+  color: #1f92f4;
+  content: "";
+
+  transition: all .5s ease-in-out;
+  content: "";
+  font: normal normal normal 14px/1 FontAwesome;
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 5px;
+  position: absolute;
+  top: 20px;
+  font-weight: bold;
+}
+
+.accordion-collapse::after {
+  content: "";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  speak: none;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  position: absolute;
+  color: #1f92f4;
+  font-size: 21px;
+  top: auto;
+  left: 20px;
+}
+
+/* style swiper slider */
+.swiper-pagination .swiper-pagination-bullet {
+  
 }
