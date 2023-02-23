@@ -1,7 +1,7 @@
 import { mainNavLinks, navLinks } from "@/constant";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiFillCaretDown } from "react-icons/ai";
 import CompanyMenu from "./components/CompanyMenu/CompanyMenu";
 import IndustriesMenu from "./components/IndustriesMenu/IndustriesMenu";
@@ -14,6 +14,12 @@ import { Fade as Hamburger } from "hamburger-react";
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState("");
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  useEffect(() => {
+    mobileNavOpen
+      ? document.querySelector("body")?.classList.add("overflow-hidden")
+      : document.querySelector("body")?.classList.remove("overflow-hidden");
+  }, [mobileNavOpen]);
 
   return (
     <header className="md:min-h-[93px] min-h-[60px] w-full">
@@ -69,7 +75,7 @@ const Navbar = () => {
                     <Link
                       href="/"
                       title="Get in Touch"
-                      className="text-[12px] font-normal text-white rounded-[25px] p-[10px_15px] border border-[#1f92f4] bg-[#1f92f4] mt-[12px] uppercase block hover:opacity-[0.7] hover:bg-white hover:!text-[#1f92f4] hover:!border-b-2 hove!r:border-[#1f92f4]"
+                      className="text-[12px] font-normal text-white rounded-[25px] p-[10px_15px] border border-[#1f92f4] bg-[#1f92f4] mt-[12px] uppercase hover:opacity-[0.7] hover:bg-white hover:!text-[#1f92f4] hover:!border-b-2 hove!r:border-[#1f92f4] xl:block hidden"
                     >
                       Get in Touch
                     </Link>

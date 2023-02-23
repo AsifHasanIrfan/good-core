@@ -56,8 +56,8 @@ body {
 }
 
 ::selection {
-    background-color: #51ffdd;
-    color: #000;
+  background-color: #51ffdd;
+  color: #000;
 }
 
 @layer components {
@@ -167,6 +167,17 @@ svg {
   font-weight: bold;
 }
 
+.sub-menu-has-children::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  position: absolute;
+  top: 2.5px;
+  color: rgb(31, 146, 244);
+  transition: all 0.5s ease-in-out 0s;
+  font: bold 16px / 1 FontAwesome;
+}
+
 .accordion-collapse::after {
   content: "";
   display: inline-block;
@@ -182,6 +193,37 @@ svg {
   font-size: 21px;
   top: auto;
   left: 20px;
+}
+
+.mobile-sub-menu {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.mobile-inner-sub-menu {
+  transition: all 1s ease-in-out;
+}
+
+.mobile-inner-sub-menu a::before {
+  transition: all .5s ease-in-out;
+  content: "";
+  font: normal normal normal 14px/1 FontAwesome;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: -15px;
+  position: absolute;
+  top: 13px;
+  font-weight: bold;
+  color: #1f92f4;
+}
+
+.collapsing {
+  position: relative;
+  /* height: 140px; */
+  overflow: hidden;
+  transition: height .35s ease;
 }
 
 /* style swiper slider */

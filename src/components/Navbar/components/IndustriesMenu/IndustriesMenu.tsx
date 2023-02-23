@@ -11,7 +11,7 @@ const IndustriesMenu: React.FC<IndustriesMenuProps> = ({ activeMenu, setActiveMe
     <div
       onMouseOver={() => setActiveMenu("Industries")}
       onMouseLeave={() => setActiveMenu("")}
-      className={`z-[8] absolute bg-white w-[90%] mx-auto left-0 right-0 m-0 border-t border-[rgba(31,146,244,.12)] shadow-[0px_6px_4px_-2px_rgb(31_146_244/12%)] p-[10px_30px] ${
+      className={`z-[8] absolute bg-white w-max mx-auto left-0 right-0 m-0 border-t border-[rgba(31,146,244,.12)] shadow-[0px_6px_4px_-2px_rgb(31_146_244/12%)] p-[10px_30px] ${
         activeMenu === "Industries"
           ? "translate-y-[0px] visible"
           : "translate-y-[-9999px] invisible"

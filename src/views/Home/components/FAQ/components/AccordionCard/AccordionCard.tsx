@@ -32,7 +32,9 @@ const AccordionCard: React.FC<AccordingCardProps> = ({ data }) => {
 
       <div
         id="collapse_li"
-        className={`${openAccordion === data.question ? "block" : "hidden"}`}
+        className={`collapsing ${
+          openAccordion === data.question ? "h-[140px]" : "!h-0"
+        }`}
         data-parent="#accordion_faq"
         role="tabpanel"
       >
