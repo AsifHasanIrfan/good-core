@@ -20,7 +20,7 @@ const ServicesContactInfo = () => {
         </div>
         <Link
           href=""
-          className="overflow-hidden bg-white border-[2px] border-white rounded-[80px] text-[14px] text-[#f13c31] tracking-[0] text-center font-semibold min-w-[110px] inline-block h-[32px] leading-[28px] m-[16px_0_0] z-10 relative"
+          className="overflow-hidden bg-white border-[2px] border-white rounded-[80px] text-[14px] text-[#f13c31] tracking-[0] text-center font-semibold min-w-[110px] inline-block h-[32px] leading-[28px] m-[16px_0_0] z-10 relative hover:shadow-[0_0_15px_#1f92f4] hover:bg-transparent hover:text-white transition-all duration-300"
         >
           View More
         </Link>

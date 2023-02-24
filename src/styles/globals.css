@@ -226,6 +226,15 @@ svg {
   transition: height .35s ease;
 }
 
+/* sticky nav on scroll */
+.scroll-down {
+  transform: translate3d(0, -100%, 0)
+}
+
+.scroll-up {
+  box-shadow: 0 6px 4px -2px rgb(31 146 244 / 12%);
+}
+
 /* style swiper slider */
 .swiper-pagination .swiper-pagination-bullet {
   

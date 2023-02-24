@@ -26,13 +26,13 @@ const TechnologiesMenu: React.FC<TechnologiesMenuProps> = ({
       <div className="container p-[10px_30px]">
         <div className="row">
           {subMenu.subMenu.map((item: any, i: number) => (
-            <div key={i} className="col-md-3 !px-[0.5rem]">
+            <div key={i} className="w-max !px-[0.5rem]">
               <div
-              className={`${
-                activeMenu === "Technologies"
-                  ? "opacity-100 duration-[1s] transition-all"
-                  : "opacity-0"
-              }`}
+                className={`${
+                  activeMenu === "Technologies"
+                    ? "opacity-100 duration-[1s] transition-all"
+                    : "opacity-0"
+                }`}
               >
                 {item.map((item: any) => (
                   <MegaMenuItem key={item.name} data={item} />
@@ -60,7 +60,7 @@ const TechnologiesMenu: React.FC<TechnologiesMenuProps> = ({
           </li>
         </ul>
 
-        <div>
+        <div className="z-[9]">
           <div>
             <h3 className="text-[20px] tracking-[-0.5px] leading-[26px] font-extrabold text-white">
               Hire Team
@@ -73,7 +73,7 @@ const TechnologiesMenu: React.FC<TechnologiesMenuProps> = ({
           <Link
             title="Know more"
             href=""
-            className="overflow-hidden bg-white border-[2px] border-white rounded-[80px] text-[14px] text-[#f13c31] tracking-[0] text-center font-semibold min-w-[110px] inline-block h-[32px] leading-[28px] m-[16px_0_0] z-10 relative"
+            className="overflow-hidden bg-white border-[2px] border-white rounded-[80px] text-[14px] text-[#f13c31] tracking-[0] text-center font-semibold min-w-[110px] inline-block h-[32px] leading-[28px] m-[16px_0_0] z-10 relative hover:shadow-[0_0_15px_#1f92f4] hover:bg-transparent hover:text-white transition-all duration-300"
           >
             Know more
           </Link>

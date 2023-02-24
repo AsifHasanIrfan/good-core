@@ -1,15 +1,14 @@
 import { mainNavLinks, navLinks } from "@/constant";
+import { Fade as Hamburger } from "hamburger-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { AiFillCaretDown } from "react-icons/ai";
 import CompanyMenu from "./components/CompanyMenu/CompanyMenu";
 import IndustriesMenu from "./components/IndustriesMenu/IndustriesMenu";
 import MobileNav from "./components/MobileNav/MobileNav";
 import ServicesMenu from "./components/ServicesMenu/ServicesMenu";
 import TechnologiesMenu from "./components/TechnologiesMenu/TechnologiesMenu";
 import TopNav from "./components/TopNav/TopNav";
-import { Fade as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState("");
@@ -21,9 +20,44 @@ const Navbar = () => {
       : document.querySelector("body")?.classList.remove("overflow-hidden");
   }, [mobileNavOpen]);
 
+  // update classList of nav on scroll
+  useEffect(() => {
+    const nav = document.getElementById("main-nav");
+    let lastScroll = 0;
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll <= 0) {
+        nav?.classList.remove("scroll-up");
+      }
+
+      if (
+        currentScroll > lastScroll &&
+        !nav?.classList.contains("scroll-down")
+      ) {
+        nav?.classList.remove("scroll-up");
+        nav?.classList.add("scroll-down");
+      }
+
+      if (
+        currentScroll < lastScroll &&
+        nav?.classList.contains("scroll-down")
+      ) {
+        nav?.classList.remove("scroll-down");
+        nav?.classList.add("scroll-up");
+      }
+
+      lastScroll = currentScroll;
+    });
+  }, []);
+
   return (
     <header className="md:min-h-[93px] min-h-[60px] w-full">
-      <div className="shadow-[0_6px_4px_-2px_rgb(31_146_244/12%)] relative">
+      <div
+        id="main-nav"
+        className="w-full fixed top-0 left-0 z-[9999] bg-white transition-all duration-300 ease-in-out"
+      >
         <TopNav />
 
         {/* Main navigation container */}
