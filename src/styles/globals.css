@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); */
 
 @tailwind base;
 @tailwind components;
@@ -93,6 +93,7 @@ body {
 .col-md-3 {
   @apply md:flex-[0_0_25%] md:max-w-[25%] relative w-full px-[15px];
 }
+
 .col-md-4 {
   @apply md:flex-[0_0_33.3333333333%] md:max-w-[33.3333333333%] relative w-full px-[15px];
 }
@@ -108,8 +109,17 @@ body {
 .col-md-7 {
   @apply md:flex-[0_0_58.3333333333%] md:max-w-[58.3333333333%] relative w-full px-[15px];
 }
+
+.col-md-8 {
+  @apply md:flex-[0_0_66.6666666667%] md:max-w-[66.6666666667%] relative w-full px-[15px];
+}
+
 .col-md-9 {
   @apply md:flex-[0_0_75%] md:max-w-[75%] relative w-full px-[15px];
+}
+
+.col-lg {
+  @apply lg:basis-0 lg:grow lg:max-w-full relative w-full px-[15px];
 }
 
 .col-lg-3 {
@@ -120,8 +130,16 @@ body {
   @apply lg:flex-[0_0_33.3333333333%] lg:max-w-[33.3333333333%] relative w-full px-[15px];
 }
 
+.col-lg-5 {
+  @apply lg:flex-[0_0_41.6666666667%] lg:max-w-[41.6666666667%] relative w-full px-[15px];
+}
+
 .col-lg-6 {
   @apply lg:flex-[0_0_50%] lg:max-w-[50%] relative w-full px-[15px];
+}
+
+.col-lg-7 {
+  @apply lg:flex-[0_0_58.3333333333%] lg:max-w-[58.3333333333%] relative w-full px-[15px];
 }
 
 .col-lg-8 {

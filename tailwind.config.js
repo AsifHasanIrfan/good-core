@@ -9,10 +9,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    // colors: {
-    //   'gray': "#edf0f6"
-    // },
     extend: {
+      colors: {
+        // 'gray': "#edf0f6"
+        "gray-bg": "#ebeef6",
+        "gray-border": "#d8dbe5",
+        "gray-100": "#f5f9fc",
+        heading: "#212125",
+        primary: "#1f92f4",
+      },
       screens: {
         sm: "576px",
         md: "768px",
