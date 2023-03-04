@@ -253,6 +253,16 @@ svg {
   box-shadow: 0 6px 4px -2px rgb(31 146 244 / 12%);
 }
 
+.lang-select {
+  background-image: url('/assets/images/lang.webp');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 1.1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 /* style swiper slider */
 .swiper-pagination .swiper-pagination-bullet {
   

@@ -3,7 +3,10 @@ import FAQ from '../../shared/FAQ/FAQ';
 import Testimonial from '../../shared/Testimonial/Testimonial';
 import AwardsAndRec from './components/Awards&Recognition/AwardsAndRec';
 import AwardWinning from './components/AwardWinning/AwardWinning';
+import CustomSoftware from './components/CustomSoftware/CustomSoftware';
 import DevelopmentServices from './components/DevelopmentServices/DevelopmentServices';
+import Engagement from './components/Engagement/Engagement';
+import Estimate from './components/Estimate/Estimate';
 import HowWeDoIt from './components/HowWeDO/HowWeDoIt';
 import OurAchievement from './components/OurAchievement/OurAchievement';
 import ServicesCta from './components/ServicesCta/ServicesCta';
@@ -12,6 +15,7 @@ import ServicesInsight from './components/ServicesInsight/ServicesInsight';
 import SuccessStories from './components/SuccessStories/SuccessStories';
 import Technologies from './components/Technologies/Technologies';
 import WhyChoose from './components/WhyChoose/WhyChoose';
+import { servicesFAQs } from './constant';
 
 const Services = () => {
   return (
@@ -36,8 +40,11 @@ const Services = () => {
       <ServicesCta />
       <HowWeDoIt />
       <Technologies />
+      <CustomSoftware />
+      <Estimate />
+      <Engagement />
       <ServicesInsight />
-      <FAQ />
+      <FAQ faqs={servicesFAQs} />
     </>
   );
 };

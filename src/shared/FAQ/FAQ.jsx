@@ -1,7 +1,6 @@
-import { FAQData } from '../../views/Home/constant';
 import AccordionCard from './components/AccordionCard/AccordionCard';
 
-const FAQ = () => {
+const FAQ = ({ faqs }) => {
   return (
     <section className="bg-[#f5f9fc] p-[80px_0]">
       <div id="accordion_faq" className="faq-accordion">
@@ -15,7 +14,7 @@ const FAQ = () => {
           </div>
 
           <div className="row">
-            {FAQData.map((faq, i) => (
+            {faqs.map((faq, i) => (
               <div key={i} className="col-md-6">
                 {faq.map((item) => (
                   <AccordionCard key={item.question} data={item} />

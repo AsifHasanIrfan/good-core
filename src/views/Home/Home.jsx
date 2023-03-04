@@ -11,6 +11,7 @@ import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import OurClients from './components/OurClients/OurClients';
 import FAQ from '../../shared/FAQ/FAQ';
 import Testimonial from '../../shared/Testimonial/Testimonial';
+import { FAQData } from './constant';
 
 const Home = () => {
 
@@ -41,7 +42,7 @@ const Home = () => {
       {/* Company News And Events Section */}
       <NewsAndEvents />
       {/* FAQ Section */}
-      <FAQ />
+      <FAQ faqs={FAQData} />
     </>
   );
 };

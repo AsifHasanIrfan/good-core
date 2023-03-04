@@ -15,7 +15,7 @@ const OurAchievement = () => {
 
         <div className="row my-[1.5rem]">
           {ourAchievementsData.map(achievement =><div key={achievement.value} className="col-md-3">
-            <div className="m-[10px_auto] text-[80px] font-bold text-white">{parse(achievement.value)}</div>
+            <div className="m-[10px_auto] text-[80px] font-bold text-white">{achievement.value}</div>
             <div className="text-[18px] font-bold uppercase">{parse(achievement.heading)}</div>
           </div>)}
         </div>
