@@ -9,7 +9,7 @@ const ServicesHero = () => {
       <div className="container">
         <div className="row text-center">
           <div className="col-md-12">
-            <h1 className="text-[64px] font-bold text-heading uppercase mb-[0.5rem] leading-[1.2]">
+            <h1 className="xlg:text-[64px] md:text-[52px] text-[40px] font-bold text-heading uppercase mb-[0.5rem] leading-[1.2]">
               <SectionHeading highlightText="Custom" /> Software DEVELOPMENT
               Services
             </h1>
@@ -20,7 +20,7 @@ const ServicesHero = () => {
             <Button
               href=""
               variant="fill"
-              className="!text-[18px] !p-[20px_40px]"
+              className="!text-[18px] !p-[20px_40px] w-full lg:w-auto"
             >
               Talk to our experts today
             </Button>

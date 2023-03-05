@@ -26,7 +26,7 @@ const WhyChoose = () => {
             </div>
 
             <div className="col-md-4">
-              <h2 className="text-left leading-[1.2] text-[38px] font-bold mt-[1rem] mb-[0.5rem]">What our customers say about working with us: </h2>
+              <h2 className="text-left leading-[1.2] md:text-[38px] text-[28px] font-bold md:mt-[1rem] mb-[0.5rem]">What our customers say about working with us: </h2>
             </div>
 
             <div className="col-md-8">

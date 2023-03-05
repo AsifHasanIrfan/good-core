@@ -5,7 +5,7 @@ import AwardSingleCard from "./components/AwardSingleCard/AwardSingleCard";
 
 const AwardsAndRec = () => {
   return (
-    <section className="p-[80px_0]">
+    <section className="md:p-[80px_0] p-[40px_0]">
       <div className="container">
         {/* Section Heading */}
         <div className="text-center mb-[3rem]">

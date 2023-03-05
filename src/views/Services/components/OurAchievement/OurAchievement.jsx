@@ -3,7 +3,7 @@ import { ourAchievementsData } from "../../constant";
 
 const OurAchievement = () => {
   return (
-    <section className="text-white bg-primary text-center p-[80px_0]">
+    <section className="text-white bg-primary text-center md:p-[80px_0] p-[40px_0]">
       <div className="container md:p-0 text-center">
         {/* Section Heading */}
         <div className="row">

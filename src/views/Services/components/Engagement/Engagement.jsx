@@ -4,7 +4,7 @@ import EngageCard from "./components/EngageCard/EngageCard";
 
 const Engagement = () => {
   return (
-    <section className="bg-gray-100 p-[80px_0]">
+    <section className="bg-gray-100 md:p-[80px_0] p-[40px_0]">
       <div className="container">
         <div className="row text-center">
           <div className="col-md-12">
