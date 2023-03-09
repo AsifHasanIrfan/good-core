@@ -109,7 +109,7 @@ const Navbar = () => {
 
                   <li>
                     <Link
-                      href="/"
+                      href="/contact"
                       title="Get in Touch"
                       className="text-[12px] font-normal text-white rounded-[25px] p-[10px_15px] border border-[#1f92f4] bg-[#1f92f4] mt-[12px] uppercase hover:opacity-[0.7] hover:bg-white hover:!text-[#1f92f4] hover:!border-b-2 hove!r:border-[#1f92f4] xl:block hidden"
                     >
