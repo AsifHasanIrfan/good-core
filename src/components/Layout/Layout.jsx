@@ -1,13 +1,16 @@
+import { useRouter } from 'next/router';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 
 const Layout = ({ children }) => {
+  const router = useRouter();
+
   return (
     <>
       <Navbar />
         { children }
-      <Contact />
+      {router.pathname !== "/contact" ? <Contact /> : null}
       <Footer />
     </>
   );

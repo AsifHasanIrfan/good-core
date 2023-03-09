@@ -1,12 +1,15 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { footerLinks } from '../../constant';
 import FooterBottom from './components/FooterBottom/FooterBottom';
 import FooterBottomLinks from './components/FooterBottomLinks/FooterBottomLinks';
 import FooterRight from './components/FooterRight/FooterRight';
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
-    <footer className="pt-[200px] bg-[#001022] text-white p-[60px_0_10px_0]">
+    <footer className={`${router.pathname === '/contact' ? 'pt-[60px]' : 'pt-[200px]'} bg-[#001022] text-white p-[60px_0_10px_0]`}>
       <div className="container">
         <div className="row">
           <div className="col-md-3">

@@ -1,3 +1,11 @@
+import questionMark from "../../public/assets/images/question-mark.webp"
+import hiringProfile from "../../public/assets/images/hiring-profile.webp";
+
+// global location image
+import ukPlace from "../../public/assets/images/uk-place.webp";
+import malaysiaPlace from "../../public/assets/images/malaysia-place.webp";
+import karachiOffice from "../../public/assets/images/karachi-office.webp";
+
 export const mainNavLinks = [
   {
     id: 1,
@@ -775,5 +783,47 @@ export const socialLinks = [
     link: "",
     iconClass: "fa fa-linkedin",
     iconImg: "",
+  },
+];
+
+// Contact Details
+export const contactDetails = [
+  {
+    icon: questionMark,
+    title: "Got questions?",
+    link: "mailto:contact@goodcore.com.uk",
+    linkText: "contact@goodcore.co.uk",
+    description:
+      "Drop us an email to discuss your project ideas with us. We will be happy to answer your questions.",
+  },
+  {
+    icon: hiringProfile,
+    title: "Build your career!",
+    link: "#",
+    linkText: "careers@goodcore.co.uk",
+    description:
+      "Be a part of team GoodCore to open up a world of opportunities for your personal and professional growth.",
+  },
+];
+
+// Contact Global location details
+export const contactGlobalLocation = [
+  {
+    image: ukPlace,
+    name: "Head Office",
+    designation:
+      "Airport House Purley Way <br />Croydon CR0 0XZ, <br /> United Kingdom <br />",
+  },
+  {
+    image: malaysiaPlace,
+    name: "Development Centre",
+    designation:
+      "SME CoPlace 2270 Jalan Usahawan <br />2 63000 Cyberjaya, <br /> Malaysia <br />",
+  },
+  {
+    image: karachiOffice,
+    name: "Development Centre",
+    designation:
+      "Finance & Trade Center <br />Block D, <br /> Main Shahra-e-Faisal, Karachi. <br />",
   },
 ];
