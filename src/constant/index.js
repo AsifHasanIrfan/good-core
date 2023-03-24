@@ -283,7 +283,7 @@ export const navLinks = {
         {
           name: "ABOUT US",
           desc: "The hardworking team behind GoodCore – achieving excellence since 2005",
-          href: "",
+          href: "/company",
           links: [],
         },
         {
@@ -297,13 +297,13 @@ export const navLinks = {
         {
           name: "HOW WE WORK",
           desc: "Four flexible engagement models: You choose one that will work best for you!",
-          href: "",
+          href: "/company/how-we-work",
           links: [],
         },
         {
           name: "PRICING",
           desc: "All the various factors you need to consider when sizing up development costs",
-          href: "",
+          href: "/company/pricing",
           links: [],
         },
       ],
@@ -317,7 +317,7 @@ export const navLinks = {
         {
           name: "FAQS",
           desc: "Answering some of the most common questions that you may have in mind",
-          href: "",
+          href: "/company/faqs",
           links: [],
         },
       ],
