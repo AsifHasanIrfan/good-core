@@ -122,6 +122,10 @@ body {
   @apply md:flex-[0_0_75%] md:max-w-[75%] relative w-full px-[15px];
 }
 
+.col-md-10 {
+  @apply md:flex-[0_0_83.3333333333%] md:max-w-[83.3333333333%] relative w-full px-[15px];
+}
+
 .col-lg {
   @apply lg:basis-0 lg:grow lg:max-w-full relative w-full px-[15px];
 }

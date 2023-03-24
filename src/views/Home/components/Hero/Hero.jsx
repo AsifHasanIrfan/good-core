@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import AwardsBanner from '../../../../components/AwardsBanner/AwardsBanner';
+import Image from "next/image";
+import AwardsBanner from "../../../../components/AwardsBanner/AwardsBanner";
 
 const Hero = () => {
   return (
