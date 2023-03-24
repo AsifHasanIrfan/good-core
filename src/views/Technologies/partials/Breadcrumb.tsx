@@ -27,12 +27,12 @@ const Breadcrumb = () => {
         <div className="row !text-center">
           <div className="col-md-10 ml-[8.3333333333%]">
             <p className="text-[18px] leading-[30px]">
-              There's no single technology stack that works for all software
-              development projects. GoodCore has deep expertise with a wide
-              variety of cutting edge development tools and we advise clients on
-              choice of suitable technology for their projects enabling secure,
-              scaleable, and flexible software applications which are easy to
-              support and upgrade in the long run.
+              There&apos;s no single technology stack that works for all
+              software development projects. GoodCore has deep expertise with a
+              wide variety of cutting edge development tools and we advise
+              clients on choice of suitable technology for their projects
+              enabling secure, scaleable, and flexible software applications
+              which are easy to support and upgrade in the long run.
             </p>
           </div>
         </div>
