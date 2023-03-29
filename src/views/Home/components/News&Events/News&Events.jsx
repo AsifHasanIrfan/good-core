@@ -1,25 +1,31 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // import required modules
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from 'swiper';
+import SectionHeading from '../../../../components/SectionHeading/SectionHeading';
+import SliderNextButton from '../../../../components/SliderButton/SliderNextButton';
+import SliderPrevButton from '../../../../components/SliderButton/SliderPrevButton';
 import NewsEventsCard from './components/News&EventsCard/News&EventsCard';
-import SectionHeading from "../../../../components/SectionHeading/SectionHeading";
-import SliderPrevButton from "../../../../components/SliderButton/SliderPrevButton";
-import SliderNextButton from "../../../../components/SliderButton/SliderNextButton";
 
-const NewsAndEvents = () => {
+const NewsAndEvents = ({ header }) => {
   return (
     <section className="pb-[30px]">
       <div className="container">
         <div className="mb-[50px] text-center">
           <h2 className="section-heading">
-            Company <SectionHeading highlightText="News & Events" />
+            {header ? (
+              header
+            ) : (
+              <>
+                Company <SectionHeading highlightText="News & Events" />
+              </>
+            )}
           </h2>
         </div>
 
@@ -28,9 +34,9 @@ const NewsAndEvents = () => {
             slidesPerView={1}
             spaceBetween={22}
             navigation={{
-              nextEl: ".nextBtn",
-              prevEl: ".prevBtn",
-              disabledClass: "hidden",
+              nextEl: '.nextBtn',
+              prevEl: '.prevBtn',
+              disabledClass: 'hidden',
             }}
             breakpoints={{
               768: {
