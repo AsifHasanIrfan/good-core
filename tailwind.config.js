@@ -17,6 +17,8 @@ module.exports = {
         "gray-100": "#f5f9fc",
         heading: "#212125",
         primary: "#1f92f4",
+        "primary-100": "#2f73ac",
+        "primary-300": "#007bff",
       },
       screens: {
         sm: "576px",
