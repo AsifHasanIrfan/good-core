@@ -311,7 +311,7 @@ export const navLinks = {
         {
           name: "OUR PROCESS",
           desc: "Our time-tested process of developing efficient and fully custom software systems",
-          href: "",
+          href: "/company/our-process",
           links: [],
         },
         {

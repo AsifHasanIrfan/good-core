@@ -3,11 +3,11 @@ import SectionHeading from '../../../../components/SectionHeading/SectionHeading
 
 const Hero = () => {
   return (
-    <section className="bg-[url('/assets/images/company/serivce-banner-bg.webp')] bg-cover w-full px-[15px] mx-auto md:py-[80px] py-10">
+    <section className="bg-[url('/assets/images/company/serivce-banner-bg.webp')] w-full px-[15px] mx-auto md:p-[80px_0] p-[40px_0]">
       <div className="container">
         <div className="row text-center">
           <div className="col-md-12">
-            <h1 className="section-heading md:mt-[40px] mb-[0.5rem] md:text-[50px] text-[23px]">
+            <h1 className="section-heading md:mt-[40px] mb-[0.5rem] md:text-[50px] text-[23px] tracking-normal">
               SOFTWARE DEVELOPMENT <SectionHeading highlightText="PROCESS" />
             </h1>
 

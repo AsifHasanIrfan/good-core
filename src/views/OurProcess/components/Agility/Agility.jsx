@@ -4,11 +4,11 @@ import SectionHeading from '../../../../components/SectionHeading/SectionHeading
 
 const Agility = () => {
   return (
-    <section className="md:py-[80px] py-[40px]">
+    <section className="md:p-[80px_0] p-[40px_0] w-full px-[15px] mx-auto">
       <div className="container">
-        <div className="row text-center">
-          <div className="col-md-12">
-            <h1 className="section-heading md:py-[30px] mb-[0.5rem] md:text-[50px] text-[26px]">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <h1 className="section-heading">
               <SectionHeading highlightText=" OUR" /> PHILOSOPHY OF AGILITY
             </h1>
           </div>
@@ -35,7 +35,7 @@ const Agility = () => {
           </div>
           <div className="col-md-4 text-center  msa-2 align-self-start">
             <Image
-              src={'/assets/images/company/Agility.webp'}
+              src={"/assets/images/company/Agility.webp"}
               width={382}
               height={329}
               alt="Agility"
