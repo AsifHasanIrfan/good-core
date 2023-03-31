@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container">
         <div className="row text-center">
           <div className="col-md-12">
-            <h1 className="section-heading mt-[40px] mb-[0.5rem] text-[50px]">
+            <h1 className="section-heading mt-[40px] mb-[0.5rem] text-[50px] tracking-normal">
               <SectionHeading highlightText="TECHNOLOGY STACK" />
             </h1>
             <p className="sub-heading max-w-[950px] inline-block !pb-[30px]">

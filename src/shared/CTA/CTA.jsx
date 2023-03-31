@@ -1,19 +1,18 @@
-import Button from "../../../../components/Button/Button";
+import Button from "../../components/Button/Button";
 
-const CTA = () => {
+const CTA = ({ title, description }) => {
   return (
     <section className="md:p-[100px_0] p-[50px_0] bg-[url('/assets/images/Call-To-Action-bg.webp')] bg-cover bg-center text-white items-center flex">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
             <h3 className="md:text-[50px] text-[30px] md:text-left text-center md:pr-[50px] font-bold mt-[20px] mb-[0.5rem] leading-[1.2]">
-              How much will your app cost?
+              {title}
             </h3>
           </div>
           <div className="col-md-6">
             <p className="md:text-[24px] text-[16px] md:pr-[80px] md:text-left text-center leading-[36px] mb-[1rem]">
-              Send us the features you are looking to build and we shall advise
-              on the next steps.
+              {description}
             </p>
             <Button
               href="/"

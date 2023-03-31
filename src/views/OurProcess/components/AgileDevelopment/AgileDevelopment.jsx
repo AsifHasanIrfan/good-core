@@ -7,13 +7,12 @@ import RightImgProcess from '../../partials/RightImgProcess';
 
 const AgileDevelopment = () => {
   return (
-    <section className="md:py-[80px] py-[40px] bg-gray-100">
+    <section className="md:p-[80px_0] p-[40px_0] bg-gray-100">
       <div className="container">
-        <div className="row text-center">
-          <div className="col-md-12">
-            <h1 className="section-heading md:py-[30px] mb-[0.5rem] md:text-[50px] text-[26px]">
-              <SectionHeading highlightText=" OUR" /> PRINCIPLES OF AGILE
-              SOFTWARE DEVELOPMENT
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <h1 className="section-heading">
+              <SectionHeading highlightText=" OUR" /> DEVELOPMENT PROCESS
             </h1>
             <p class="sub-content">
               A streamlined six-stage process to develop valuable software for
@@ -22,20 +21,48 @@ const AgileDevelopment = () => {
           </div>
         </div>
 
-        <div className="row items-center text-center mx-auto  mt-7 mb-7">
-          <div className="col-md-12 text-center ">
+        <div className="row items-center hidden md:block mx-auto  my-[70px]">
+          <div className="col-md-12 text-center">
             <Image
-              src={'/assets/images/company/our-development-process.webp'}
+              src={"/assets/images/company/our-development-process.webp"}
               width={920}
               height={514}
+              className="inline-block"
               alt="dv process"
             />
           </div>
         </div>
 
+        <div className="row items-center mt-[3rem] md:text-left text-center">
+          <div className="col-md-4 text-center">
+            <div className="bg-[url('/assets/images/company/process-sprite.png')] bg-[0_0] w-[208px] h-[208px] m-auto bg-no-repeat"></div>
+          </div>
+          <div className="col-md-8 order-md-2   mt-4">
+            <h3 className="font-bold md:text-[27px] text-[19px] md:py-5 py-[10px] mb-4">
+              1. Discovery Phase
+            </h3>
+            <p className="md:text-[18px] text-[15px] leading-[30px] mt-4">
+              When developing a bespoke software system, we kickstart the
+              development process with comprehensive planning and analysis. We
+              work closely with the client to define and document the
+              requirements of the software system. This stage also consists of
+              the ‘discovery’ part of the software process – a three- to
+              six-week phase that helps visualise your idea and creates a
+              well-defined scope of work. Find out more about
+
+              <Link
+                href={"#"}
+                className="text-primary hover:underline transition-all duration-200"
+              >
+                software discovery.
+              </Link>
+            </p>
+          </div>
+        </div>
+
         <LeftImgProcess
-          imgSrc={'/assets/images/company/p1.png'}
-          title={'1. Discovery Phase'}
+          imgSrc={"/assets/images/company/p1.png"}
+          title={"1. Discovery Phase"}
           content={
             <>
               {` When developing a bespoke software system, we kickstart the
@@ -47,7 +74,7 @@ const AgileDevelopment = () => {
               well-defined scope of work. Find out more about `}
 
               <Link
-                href={'#'}
+                href={"#"}
                 className="text-primary hover:underline transition-all duration-200"
               >
                 software discovery.
@@ -57,21 +84,21 @@ const AgileDevelopment = () => {
         />
 
         <RightImgProcess
-          title={'2. UI/UX Design'}
-          imgSrc={'/assets/images/company/p2.png'}
+          title={"2. UI/UX Design"}
+          imgSrc={"/assets/images/company/p2.png"}
           content={
             <>
               Our team of UI/UX experts work out a well-suited design blueprint
               for your software that is not only aesthetically pleasing but
               functional and user-friendly. We put thought into every small
               detail of your software, from layout, navigation, buttons to all
-              the other UI elements. The goal of our{' '}
+              the other UI elements. The goal of our{" "}
               <Link
                 href="#"
                 className="text-primary hover:underline transition-all duration-200"
               >
                 UI/UX design
-              </Link>{' '}
+              </Link>{" "}
               process is to specifically tailor an impactful, intuitive, and
               easy-to-interact design for your software that meets your
               requirements. <br />
@@ -85,7 +112,7 @@ const AgileDevelopment = () => {
         />
 
         <LeftImgProcess
-          title={'3. Development'}
+          title={"3. Development"}
           content={
             <>
               This is the phase of the development process where your software
@@ -103,15 +130,15 @@ const AgileDevelopment = () => {
               process.
             </>
           }
-          imgSrc={'/assets/images/company/p3.png'}
+          imgSrc={"/assets/images/company/p3.png"}
         />
 
         <RightImgProcess
-          title={'4. Testing and Quality Assurance'}
-          imgSrc={'/assets/images/company/p4.png'}
+          title={"4. Testing and Quality Assurance"}
+          imgSrc={"/assets/images/company/p4.png"}
           content={
             <>
-              {' '}
+              {" "}
               This is the stage of the development process where the team makes
               sure that the software is of the highest quality and it conforms
               to the requirements specified by the customer. Our QA engineers
@@ -122,20 +149,20 @@ const AgileDevelopment = () => {
               aspect of the software until the quality of the solution meets the
               original requirements. Only when the software has passed all
               quality checks do we proceed to release it to the end-users. Find
-              out more about{' '}
+              out more about{" "}
               <Link
                 href="#"
                 className="text-primary hover:underline transition-all duration-200"
               >
                 testing and quality assurance
               </Link>
-              .{' '}
+              .{" "}
             </>
           }
         />
 
         <LeftImgProcess
-          title={'5. Deployment'}
+          title={"5. Deployment"}
           content={
             <>
               After successful testing and a final go-ahead from the QA and
@@ -146,15 +173,15 @@ const AgileDevelopment = () => {
               are successfully launched to the app store(s) and available to
               users. Our team is also experienced with planning the roll-out of
               complex software systems and we work closely with you to make sure
-              that the deployment process is swift and streamlined.{' '}
+              that the deployment process is swift and streamlined.{" "}
             </>
           }
-          imgSrc={'/assets/images/company/p5.png'}
+          imgSrc={"/assets/images/company/p5.png"}
         />
 
         <RightImgProcess
-          title={'6. Maintenance and Support'}
-          imgSrc={'/assets/images/company/p6.png'}
+          title={"6. Maintenance and Support"}
+          imgSrc={"/assets/images/company/p6.png"}
           content={
             <>
               Our job does not end after the release of the software. It is our

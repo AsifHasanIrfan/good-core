@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
+import CTA from '../../shared/CTA/CTA';
 import FAQ from '../../shared/FAQ/FAQ';
 import NewsAndEvents from '../../shared/News&Events/News&Events';
 import { FAQData } from '../Home/constant';
@@ -18,12 +19,16 @@ const OurProcess = () => {
       <Agility />
       <Principles />
       <AgileDevelopment />
+      <CTA
+        title="Want to kickstart your project?"
+        description="We offer end-to-end software development services – from discovery to deployment – and work with clients every step of the way to develop competitive software solutions. Do you have a project to discuss?"
+      />
       <Role />
       <FAQ faqs={FAQData} />
       <NewsAndEvents
         sectionTitle={
           <>
-            SOFTWARE DEVELOPMENT PROCESS{' '}
+            SOFTWARE DEVELOPMENT PROCESS{" "}
             <SectionHeading highlightText="INSIGHTS" />
           </>
         }

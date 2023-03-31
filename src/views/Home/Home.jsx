@@ -1,6 +1,5 @@
 import AboutUs from './components/AboutUs/AboutUs';
 import Approach from './components/Approach/Approach';
-import CTA from './components/CTA/CTA';
 import Hero from './components/Hero/Hero';
 import Objective from './components/Objective/Objective';
 import Services from './components/Services/Services';
@@ -13,6 +12,7 @@ import { FAQData } from './constant';
 import Awards from '../../shared/Awards/Awards';
 import NewsAndEvents from '../../shared/News&Events/News&Events';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
+import CTA from '../../shared/CTA/CTA';
 
 const Home = () => {
 
@@ -35,7 +35,10 @@ const Home = () => {
       {/* Business Objectives Section */}
       <Objective />
       {/* cta Section */}
-      <CTA />
+      <CTA
+        title="How much will your app cost?"
+        description="Send us the features you are looking to build and we shall advise on the next steps."
+      />
       {/* Our Approach Section */}
       <Approach />
       {/* About Us Section */}
