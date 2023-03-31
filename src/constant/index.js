@@ -827,3 +827,164 @@ export const contactGlobalLocation = [
       "Finance & Trade Center <br />Block D, <br /> Main Shahra-e-Faisal, Karachi. <br />",
   },
 ];
+
+// company faq
+export const companyFaqs = [
+  {
+    id: "faq1",
+    question: " What kind of customers does GoodCore work with? ",
+    answer:
+      " We work with startups, small- and medium-sized businesses, large organisations, and public sector organisations, belonging to a wide range of industries such as finance, education, technology, and healthcare. ",
+  },
+  {
+    id: "faq2",
+    question: " I am a One Person Company. Would GoodCore work with me? ",
+    answer:
+      " We work with companies of all sizes, from small startups to large enterprises. We do not exclude anyone merely on the basis of the number of employees or owners. In fact, we have worked with many startups over the years, some of whom have grown tremendously. ",
+  },
+  {
+    id: "faq3",
+    question: " How can I get started? ",
+    answer:
+      " An important step to get started with your project is communicating your requirements to us. After you contact us, we conduct an initial discussion to understand your requirements to quickly determine the indicative project scope and costs and identify any significant project risks. ",
+  },
+  {
+    id: "faq4",
+    question: " How soon will my inquiry be acknowledged? ",
+    answer:
+      " When you send us a query through our website’s contact form, email, or telephone, our team contacts you within one business day. ",
+  },
+  {
+    id: "faq5",
+    question:
+      " What does GoodCore offer besides bespoke software development? ",
+    answer:
+      " We offer a wide variety of professional services including consultation, software project rescue,  UI/UX design,  systems integration,  support and maintenance, and quality assurance and software testing services. ",
+  },
+  {
+    id: "faq6",
+    question: " Does GoodCore advise on applications' server hosting? ",
+    answer:
+      " All applications developed have to be hosted somewhere. We advise our customers on what hosting provider to choose along with the correct specifications for the servers. ",
+  },
+  {
+    id: "faq7",
+    question:
+      " Why should I choose bespoke software development for my business? ",
+    answer:
+      " There is a plethora of off-the-shelf software available for different business requirements, and if you have fairly straight-forward requirements, then using an off-the-shelf software might be best for you. But if (A) you have a complex set of requirements that are beyond the scope of standard off-the-shelf solutions, or (B) you choose to invest in software development rather than paying the recurring hefty license fees for off-the-shelf solutions, then bespoke software development would be best suited for you. ",
+  },
+  {
+    id: "faq8",
+    question: " How does GoodCore develop software for startups? ",
+    answer:
+      " We understand what it takes to get a startup up and running. For startups, we undertake the software development through an iterative process, starting out with an MVP (Minimum Viable Product) that features all the things that absolutely must be in the application to effectively test the market out. ",
+  },
+  {
+    id: "faq9",
+    question: " What is a Minimum Viable Product (MVP)? ",
+    answer:
+      " A minimum viable product is a simpler version of your product which is built with all the core functionalities and features. An MVP is developed and launched as the first phase of development that helps to test out your product in the market, determines the potential of your ideas, and helps attract investors and partners early on. This significantly reduces your risks and chances of failure and helps develop a final product that meets the market expectations and provides maximum value to the customers. ",
+  },
+  {
+    id: "faq10",
+    question: " What is a Minimum Viable Product (MVP)? ",
+    answer:
+      " A minimum viable product is a simpler version of your product which is built with all the core functionalities and features. An MVP is developed and launched as the first phase of development that helps to test out your product in the market, determines the potential of your ideas, and helps attract investors and partners early on. This significantly reduces your risks and chances of failure and helps develop a final product that meets the market expectations and provides maximum value to the customers. ",
+  },
+  {
+    id: "faq11",
+    question:
+      " How detailed a set of requirements is needed to get a project estimation for us? ",
+    answer:
+      " Since the first step of a project estimation exercise is to fully understand the project’s requirements, we always urge our clients to provide us with as much information as possible that helps describe the project, such as the set of functional and non-functional requirements, business logic, competitive landscape, personas of end-users, wireframes etc. ",
+  },
+  {
+    id: "faq12",
+    question:
+      " I have an idea for a software application but I don’t know a lot about the technical specifications. Can GoodCore help me with that? ",
+    answer:
+      " Software development is a highly technical process. Therefore, we do not expect you to have perfect knowledge of the technical domain. We have a team of professionals who would be happy to help you understand all the technical aspects of your project so that you can make the right decisions. We expect you to know your functional requirements, while we manage the technical side of things. ",
+  },
+  {
+    id: "faq13",
+    question:
+      " I have drawn up some wireframes for my product idea. Can you work with those? ",
+    answer:
+      " Most clients who approach us expect us to start from scratch, i.e. at the discovery stage where we note the requirements of the clients. Then comes the rest of the software development process, including software design and architecture. However, if you already have a design in mind in the form of blueprints or wireframes, that’s great, you already have a head start! We can go through them together and discuss how to build your product further upon them. ",
+  },
+  {
+    id: "faq14",
+    question:
+      " I am in the middle of development with another company but I am not happy with their work. Can you help? ",
+    answer:
+      " If your current development team is not delivering up-to-the-mark results, we will be happy to take over, rescue your project, and see it to successful completion and implementation. Although this is a very tricky exercise, we are willing to explore the possibility of us taking over the code from another company. ",
+  },
+  {
+    id: "faq15",
+    question:
+      " I want to move over an existing project. Can GoodCore help me with that? ",
+    answer:
+      " If your product was developed by another company, we can explore taking it over from the other company. Generally, cooperation from your existing provider is needed. Such projects are always tricky and each project is different from the other, but we are willing to dig deeper to find out if it’s something that we can help with. ",
+  },
+  {
+    id: "faq16",
+    question: " What are your software development costs? ",
+    answer:
+      " The costs of software development vary from project to project based on various factors, such as the scope, requirements, and technical complexity. We will determine the cost of your project after a thorough discussion with you to understand your requirements and assess the scope of your project. The final cost of software development comprises four major components: Development, Project Management, Quality Assurance, and UI/UX Design. ",
+  },
+  {
+    id: "faq17",
+    question: " What are GoodCore’s terms of payment? ",
+    answer:
+      " Payments are based on certain milestones. There is generally an upfront payment that is required to initiate the project followed by further payments at different stages of the product development cycle. You can expect a total of 4-5 payment milestones. ",
+  },
+  {
+    id: "faq18",
+    question: " What kind of contract options do I have? ",
+    answer: " There are four options which you can choose from: ",
+  },
+  {
+    id: "faq19",
+    question:
+      " How will GoodCore’s team stay in touch with me? Do you have a reliable communication and collaboration channel? ",
+    answer:
+      " Our team will be available to you at all times via any communication channel of your choice, be it via phone, email, live chat, or any other messaging service. We also use different collaboration tools, such as Redmine, to communicate with our customers. Zoom is another key tool that we use to stay in touch with customers. ",
+  },
+  {
+    id: "faq20",
+    question:
+      " Who will be my main point of contact? Do I work directly with the developers? ",
+    answer:
+      " We will assign a relevant professional (usually the Project Manager) for this purpose. It’s always a lot more efficient and productive to work through Project Managers and not developers.Our team will be available to you at all times via any communication channel of your choice, be it via phone, email, live chat, or any other messaging service. We also use different collaboration tools, such as Redmine, to communicate with our customers. Zoom is another key tool that we use to stay in touch with customers. ",
+  },
+  {
+    id: "faq21",
+    question: " What happens after my project goes live? ",
+    answer:
+      " Once your project is launched, our team will provide 24/7 support in case any problems arise. You can also subscribe for periodic maintenance with a package of your choice. ",
+  },
+  {
+    id: "faq22",
+    question: " Who will own the Intellectual Property rights for my project? ",
+    answer:
+      " You will be the sole owner of the project. Period. We are merely here to help bring your idea to life. We do not own it at any stage of the development process. ",
+  },
+  {
+    id: "faq23",
+    question: " Will my software be GDPR-compliant? ",
+    answer:
+      " In case your business operates in the EU region or has (potential) customers in the EU, we will make sure that your software product follows all the laws and rules laid out in the GDPR legislation so that you do not face any legal challenges. ",
+  },
+  {
+    id: "faq24",
+    question: " What technologies do you work on? ",
+    answer: " Our team is well-experienced at working with the latest ",
+  },
+  {
+    id: "faq25",
+    question: " What is GoodCore’s policy to ensure confidentiality? ",
+    answer:
+      " We understand the importance of protecting the valuable information you entrust us with. As per our policy, we sign a non-disclosure agreement (NDA) with you that legally binds us to hold all the information, including any propriety or project-related information exchanged during sales inquiries or over the course of our contract, in strict confidence. You can go through our complete ",
+  },
+];

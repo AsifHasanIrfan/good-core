@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import FAQ from '../../shared/FAQ/FAQ';
-import NewsAndEvents from '../Home/components/News&Events/News&Events';
+import NewsAndEvents from '../../shared/News&Events/News&Events';
 import { FAQData } from '../Home/constant';
 import Breadcrumb from '../HowWeWork/partials/Breadcrumb/Breadcrumb';
 import AgileDevelopment from './components/AgileDevelopment/AgileDevelopment';
@@ -21,7 +21,7 @@ const OurProcess = () => {
       <Role />
       <FAQ faqs={FAQData} />
       <NewsAndEvents
-        header={
+        sectionTitle={
           <>
             SOFTWARE DEVELOPMENT PROCESS{' '}
             <SectionHeading highlightText="INSIGHTS" />

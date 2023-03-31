@@ -1,9 +1,7 @@
 import AboutUs from './components/AboutUs/AboutUs';
 import Approach from './components/Approach/Approach';
-import Awards from './components/Awards/Awards';
 import CTA from './components/CTA/CTA';
 import Hero from './components/Hero/Hero';
-import NewsAndEvents from './components/News&Events/News&Events';
 import Objective from './components/Objective/Objective';
 import Services from './components/Services/Services';
 import SuccessStories from './components/SuccessStories/SuccessStories';
@@ -12,6 +10,9 @@ import OurClients from './components/OurClients/OurClients';
 import FAQ from '../../shared/FAQ/FAQ';
 import Testimonial from '../../shared/Testimonial/Testimonial';
 import { FAQData } from './constant';
+import Awards from '../../shared/Awards/Awards';
+import NewsAndEvents from '../../shared/News&Events/News&Events';
+import SectionHeading from '../../components/SectionHeading/SectionHeading';
 
 const Home = () => {
 
@@ -28,7 +29,7 @@ const Home = () => {
       {/* Our Clients Say Section */}
       <Testimonial />
       {/* Awards & Recognition Section */}
-      <Awards />
+      <Awards showButton={true} />
       {/* Why Choose Us Section */}
       <WhyChooseUs />
       {/* Business Objectives Section */}
@@ -40,7 +41,13 @@ const Home = () => {
       {/* About Us Section */}
       <AboutUs />
       {/* Company News And Events Section */}
-      <NewsAndEvents />
+      <NewsAndEvents
+        sectionTitle={
+          <>
+            Company <SectionHeading highlightText="News & Events" />
+          </>
+        }
+      />
       {/* FAQ Section */}
       <FAQ faqs={FAQData} />
     </>

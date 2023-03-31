@@ -35,7 +35,7 @@ const CompanyAbout = () => {
           </div>
 
           <div className="col-md-6">
-            <div className="location-map">
+            <div className="location-map w-full h-full flex items-center">
               <Image src={locationMap} alt="location-map" />
             </div>
           </div>

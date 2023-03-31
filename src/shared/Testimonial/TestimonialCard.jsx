@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
 const TestimonialCard = () => {
   return (
@@ -15,7 +14,7 @@ const TestimonialCard = () => {
           height={80}
           src="/assets/images/Perveztufail.webp"
           alt=""
-          className="inline-block"
+          className="!inline-block"
         />
         <div className="inline-block align-middle p-[0_0_0_15px] max-w-[calc(100%-100px)]">
           <h4 className="text-[16px] font-semibold leading-[1.2]">
@@ -43,7 +42,7 @@ const TestimonialCard = () => {
           height={17}
           src="/assets/images/clutch.svg"
           alt=""
-          className="inline-block opacity-[0.4] hover:opacity-100"
+          className="!inline-block opacity-[0.4] hover:opacity-100"
         />
       </Link>
     </div>
