@@ -1,10 +1,26 @@
-import { SwiperSlide } from "swiper/react";
+import Slider from 'react-slick';
 import Button from '../../../../components/Button/Button';
 import SectionHeading from '../../../../components/SectionHeading/SectionHeading';
-import Slider from "../../../../components/Slider/Slider";
+import SliderNextButton from "../../../../components/SliderButton/SliderNextButton";
+import SliderPrevButton from "../../../../components/SliderButton/SliderPrevButton";
 import StoryImage from './StoryImage';
 
 const SuccessStories = () => {
+  // slider config settings
+  const settings = {
+    className:
+      "row !flex mb-[30px] success-story-slider",
+    dotsClass: "slick-dots !bottom-[-5px]",
+    draggable: true,
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: <SliderNextButton />,
+    nextArrow: <SliderPrevButton />,
+  };
+
   return (
     <section className="bg-[#f5f9fc] p-[80px_0] block">
       <div className="container p-0">
@@ -17,25 +33,11 @@ const SuccessStories = () => {
         </div>
 
         {/* slider */}
-        <div className="p-[30px_25px]">
-          <Slider slidesPerView={1}>
-            <SwiperSlide>
-              <div className="row items-center mx-0">
-                <StoryImage />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <h2 className="section-heading">
-                <SectionHeading highlightText="success" /> STORIES
-              </h2>
-            </SwiperSlide>
-            <SwiperSlide>
-              <h2 className="section-heading">
-                <SectionHeading highlightText="success" /> STORIES
-              </h2>
-            </SwiperSlide>
-          </Slider>
-        </div>
+        <Slider {...settings}>
+          {[...Array(10)].map((_, i) => (
+            <StoryImage key={i} />
+          ))}
+        </Slider>
 
         <div className="row mt-[3rem]">
           <div className="col-md-12 text-center">

@@ -1,8 +1,12 @@
 import Link from "next/link";
-import React from "react";
-import AppFactor from "./components/AppFactor/AppFactor";
+import ChallengingProject from "./components/ChallengingProject/ChallengingProject";
+import ComponentsCost from "./components/ComponentsCost/ComponentsCost";
+import CostInsight from "./components/CostInsight/CostInsight";
 import IndicativePricing from "./components/IndicativePricing/IndicativePricing";
+import PhasedApproach from "./components/PhasedApproach/PhasedApproach";
 import PricingBanner from "./components/PricingBanner/PricingBanner";
+import RealisticCost from "./components/RealisticCost/RealisticCost";
+import AppFactor from "./components/AppFactor/AppFactor";
 
 const Pricing = () => {
   return (
@@ -35,6 +39,11 @@ const Pricing = () => {
       </div>
       <AppFactor />
       <IndicativePricing />
+      <ComponentsCost />
+      <ChallengingProject />
+      <PhasedApproach />
+      <RealisticCost />
+      <CostInsight />
     </>
   );
 };

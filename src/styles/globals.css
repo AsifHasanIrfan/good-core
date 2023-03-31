@@ -72,7 +72,7 @@ body {
   .col-md-12 {
     @apply md:flex-[0_0_100%] md:max-w-full relative w-full px-[15px];
   }
-  
+
   .section-heading {
     @apply md:text-[48px] text-[26px] font-bold text-[#212125] uppercase md:m-[30px_0] m-[10px_0] tracking-[1px] leading-[1.2];
   }
@@ -167,7 +167,7 @@ svg {
 }
 
 .service-box:hover svg {
-  transform: scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
   z-index: 22;
   position: relative;
   fill: white !important;
@@ -245,6 +245,17 @@ svg {
   color: #1f92f4;
 }
 
+.mega-menu-item::before {
+  content: "";
+  font: normal normal normal 14px/1 FontAwesome;
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 13px;
+  position: relative;
+  vertical-align: middle;
+  -webkit-text-stroke: 1px #f7fafd;
+}
+
 .collapsing {
   position: relative;
   /* height: 140px; */
@@ -271,22 +282,31 @@ svg {
   white-space: nowrap;
 }
 
-.custom-input, .custom-textarea textarea {
+.custom-input,
+.custom-textarea textarea {
   outline: none;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.custom-input:focus ~ label, .custom-input:valid ~ label, .custom-select select:focus ~ label, .custom-select select:not([value=""]):valid ~ label {
+.custom-input:focus~label,
+.custom-input:valid~label,
+.custom-select select:focus~label,
+.custom-select select:not([value=""]):valid~label {
   top: -9px;
   transform: translate(0.25em, -30%) scale(.8);
 }
 
-.custom-input + label, .custom-select select + label, .custom-textarea textarea + label, .custom-checkbox label {
+.custom-input+label,
+.custom-select select+label,
+.custom-textarea textarea+label,
+.custom-checkbox label {
   transition: transform .25s, opacity .25s ease-in-out;
   transform-origin: 0 0;
 }
 
-.custom-input:focus, .custom-textarea textarea:focus, .custom-select select:focus {
+.custom-input:focus,
+.custom-textarea textarea:focus,
+.custom-select select:focus {
   border-bottom: 2px solid #1f92f4;
 }
 
@@ -311,13 +331,50 @@ svg {
   cursor: pointer;
 }
 
-/* style swiper slider */
-.swiper-pagination .swiper-pagination-bullet {
-  
+.pricing-tab-active::before {
+  font-family: FontAwesome;
+  font-size: 55px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  color: rgb(187, 224, 249);
+  bottom: -17%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.pricing-tab-content {
+  transition: opacity .15s linear;
+}
+
+.core-team-hover-item {
+  -webkit-transition: all .6s cubic-bezier(.57, .21, .69, 1.25);
+  -moz-transition: all .6s cubic-bezier(.57, .21, .69, 1.25);
+  -o-transition: all .6s cubic-bezier(.57, .21, .69, 1.25);
+  transition: all .6s cubic-bezier(.57, .21, .69, 1.25);
+}
+
+.collab-list li {
+  list-style-image: url(/assets/images/company/tick.webp);
 }
 
 @media (max-width: 767.98px) {
   .custom-textarea textarea::placeholder {
     font-size: 11px;
   }
+}
+
+/* ==================== slick slider Styles ==================== */
+.news-events-slider .slick-slide,
+.cost-insight .slick-slide {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.testimonial-slider .slick-slide {
+  padding: 0 11px;
 }
