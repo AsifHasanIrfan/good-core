@@ -1,10 +1,10 @@
-import questionMark from "../../public/assets/images/question-mark.webp"
 import hiringProfile from "../../public/assets/images/hiring-profile.webp";
+import questionMark from "../../public/assets/images/question-mark.webp";
 
 // global location image
-import ukPlace from "../../public/assets/images/uk-place.webp";
-import malaysiaPlace from "../../public/assets/images/malaysia-place.webp";
 import karachiOffice from "../../public/assets/images/karachi-office.webp";
+import malaysiaPlace from "../../public/assets/images/malaysia-place.webp";
+import ukPlace from "../../public/assets/images/uk-place.webp";
 
 export const mainNavLinks = [
   {
@@ -289,7 +289,7 @@ export const navLinks = {
         {
           name: "TECHNOLOGIES",
           desc: "Tools and technologies selected depending on the specifics of each project",
-          href: "",
+          href: "/technologies",
           links: [],
         },
       ],
