@@ -12,6 +12,7 @@ import Testimonial from '../../shared/Testimonial/Testimonial';
 import { FAQData } from './constant';
 import Awards from '../../shared/Awards/Awards';
 import NewsAndEvents from '../../shared/News&Events/News&Events';
+import SectionHeading from '../../components/SectionHeading/SectionHeading';
 
 const Home = () => {
 
@@ -40,7 +41,13 @@ const Home = () => {
       {/* About Us Section */}
       <AboutUs />
       {/* Company News And Events Section */}
-      <NewsAndEvents />
+      <NewsAndEvents
+        sectionTitle={
+          <>
+            Company <SectionHeading highlightText="News & Events" />
+          </>
+        }
+      />
       {/* FAQ Section */}
       <FAQ faqs={FAQData} />
     </>

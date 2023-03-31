@@ -1,10 +1,9 @@
 import Slider from "react-slick";
-import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import SliderNextButton from "../../components/SliderButton/SliderNextButton";
 import SliderPrevButton from "../../components/SliderButton/SliderPrevButton";
 import NewsEventsCard from './components/News&EventsCard/News&EventsCard';
 
-const NewsAndEvents = () => {
+const NewsAndEvents = ({ sectionTitle }) => {
   // slider config settings
   const settings = {
     className: "row !flex p-[30px_25px] pb-0 news-events-slider",
@@ -23,7 +22,7 @@ const NewsAndEvents = () => {
       <div className="container">
         <div className="mb-[50px] text-center">
           <h2 className="section-heading">
-            Company <SectionHeading highlightText="News & Events" />
+            {sectionTitle}
           </h2>
         </div>
 
