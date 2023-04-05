@@ -196,11 +196,11 @@ export const navLinks = {
           links: [
             {
               name: "Node.js",
-              href: "",
+              href: "/technologies/node-js-development",
             },
             {
               name: "PHP",
-              href: "",
+              href: "/technologies/php-development",
             },
             {
               name: ".NET",
