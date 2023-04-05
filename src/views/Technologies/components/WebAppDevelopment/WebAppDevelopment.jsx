@@ -21,7 +21,7 @@ const WebAppDevelopment = () => {
           border={true}
           techArray={FrontendTechArray}
         >
-          <p className="text-[18px] leading-[1.8] p-[0_50px_0_0] mb-[1rem]">
+          <p className="text-[18px] leading-[1.8] md:p-[0_50px_0_0] mb-[1rem]">
             Our forte lies in developing responsive and dynamic user-interfaces
             for{" "}
             <Link

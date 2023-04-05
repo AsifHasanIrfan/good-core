@@ -4,7 +4,7 @@ import TechItem from "../../../shared/Technology/TechItem/TechItem";
 const TechnologiesBox = ({ heading, children, border, techArray }) => {
   return (
     <div
-      className={`row ${
+      className={`row text-center md:text-left ${
         border === true && "border-b-[2px] border-gray-border"
       }`}
     >

@@ -23,9 +23,9 @@ const Breadcrumb = () => {
       </div>
 
       {/* bottom text  */}
-      <div className="container p-[80px_0]">
+      <div className="container p-[40px_0] md:p-[80px_0]">
         <div className="row !text-center">
-          <div className="col-md-10 ml-[8.3333333333%]">
+          <div className="col-md-10 md:ml-[8.3333333333%]">
             <p className="text-[18px] leading-[30px]">
               There&apos;s no single technology stack that works for all
               software development projects. GoodCore has deep expertise with a
