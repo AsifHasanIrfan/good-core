@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EngagementModel from "./components/EngagementModel/EngagementModel";
 import Hero from "./components/Hero/Hero";
 import OurWork from "./components/OurWork/OurWork";
 import WeOffer from "./components/WeOffer/WeOffer";
@@ -10,6 +11,7 @@ const HowWeWork = () => {
       <Hero />
       <Breadcrumb />
       <WeOffer />
+      <EngagementModel />
       <OurWork />
     </>
   );

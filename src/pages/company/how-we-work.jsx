@@ -1,4 +1,4 @@
-import HowWeWork from "../../views/HowWeWork/HowWeWork";
+import HowWeWork from '../../views/HowWeWork/HowWeWork';
 
 const howWeWorkPage = () => {
   return (

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import FaqQuestions from './components/FaqQuestions/FaqQuestions';
 import HeroBanner from './components/HeroBanner/HeroBanner';
+import OtherQuestions from './components/OtherQuestion/OtherQuestions';
 
 const CompanyFaqs = () => {
   return (
@@ -32,6 +33,7 @@ const CompanyFaqs = () => {
       </p>
     </div>
     <FaqQuestions />
+    <OtherQuestions />
     </>
   );
 };

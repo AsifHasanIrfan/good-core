@@ -1,15 +1,11 @@
 import React from "react";
 import TechItem from "../../../shared/Technology/TechItem/TechItem";
 
-const TechnologiesBox = ({ heading, children, border, techArray }) => {
+const TechnologiesBox = ({ heading, children, techArray }) => {
   return (
-    <div
-      className={`row text-center md:text-left ${
-        border === true && "border-b-[2px] border-gray-border"
-      }`}
-    >
+    <>
       <div className="col-md-6 mt-[40px]">
-        <h4 className="text-primary-100 text-[26px] font-bold mb-[.5rem]">
+        <h4 className="text-primary-100 text-[26px] font-bold mb-[.5rem] leading-[1.2]">
           {heading && heading}
         </h4>
         {children}
@@ -21,7 +17,7 @@ const TechnologiesBox = ({ heading, children, border, techArray }) => {
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 
