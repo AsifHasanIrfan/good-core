@@ -94,6 +94,10 @@ body {
   @apply flex-[0_0_100%] max-w-full relative w-full px-[15px];
 }
 
+.col-md-2 {
+  @apply md:flex-[0_0_16.6666666667%] md:max-w-[16.6666666667%] relative w-full px-[15px];
+}
+
 .col-md-3 {
   @apply md:flex-[0_0_25%] md:max-w-[25%] relative w-full px-[15px];
 }
@@ -128,6 +132,10 @@ body {
 
 .col-lg {
   @apply lg:basis-0 lg:grow lg:max-w-full relative w-full px-[15px];
+}
+
+.col-lg-2 {
+  @apply lg:flex-[0_0_16.6666666667%] lg:max-w-[16.6666666667%] relative w-full px-[15px];
 }
 
 .col-lg-3 {
