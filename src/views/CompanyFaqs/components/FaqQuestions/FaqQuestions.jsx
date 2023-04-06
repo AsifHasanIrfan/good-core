@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { companyFaqs } from "../../../../constant";
 import FAQCard from "../FAQCard/FAQCard";
 
 const FaqQuestions = () => {
-  
+  const [toggleFaq, setToggleFaq] = useState("");
+
   return (
     <section className="p-[80px_0]">
       <div className="container pb-[3rem]">
@@ -12,7 +14,12 @@ const FaqQuestions = () => {
               <hr className="my-[1rem] border-t-[rgba(0,0,0,.1)]" />
               <div className="xlg:mt-[3rem] mt-[20px]">
                 {companyFaqs.map((faq) => (
-                  <FAQCard key={faq.id} faq={faq} />
+                  <FAQCard
+                    key={faq.id}
+                    faq={faq}
+                    toggleFaq={toggleFaq}
+                    setToggleFaq={setToggleFaq}
+                  />
                 ))}
               </div>
             </div>

@@ -1,8 +1,7 @@
 import { useRef, useState } from "react";
 
-const FAQCard = ({ faq }) => {
+const FAQCard = ({ faq, toggleFaq, setToggleFaq }) => {
   const contentEl = useRef();
-  const [toggleFaq, setToggleFaq] = useState('');
   
   return (
     <div className="mb-[20px] border border-[#c1cfdf] rounded-[5px] overflow-hidden relative flex flex-col min-w-0 bg-white">

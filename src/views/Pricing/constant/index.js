@@ -1,18 +1,23 @@
+// pricing tabs icons
+import smallProject from "../../../assets/images/company/small.webp";
+import mediumProject from "../../../assets/images/company/medium.webp";
+import largeProject from "../../../assets/images/company/large.webp";
+
 export const indicativePricing = [
   {
-    icon: "",
+    icon: smallProject,
     type: "small",
     name: "Small project",
     price_range: "£25,000-£50,000",
   },
   {
-    icon: "",
+    icon: mediumProject,
     type: "medium",
     name: "Medium-sized project",
     price_range: "£50,000-£100,000",
   },
   {
-    icon: "",
+    icon: largeProject,
     type: "large",
     name: "Large project",
     price_range: "£100,000+",
