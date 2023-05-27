@@ -34,7 +34,7 @@ export const mainNavLinks = [
   {
     id: 5,
     title: "Case Studies",
-    link: "/case-studies",
+    link: "/cases",
     isSubMenu: false,
   },
   {
@@ -208,7 +208,7 @@ export const navLinks = {
             },
             {
               name: "JAVA",
-              href: "",
+              href: "/technologies/hire-java-developers",
             },
           ],
         },
@@ -374,7 +374,7 @@ export const navLinks = {
   },
   caseStudies: {
     name: "Case Studies",
-    link: "/case-studies",
+    link: "/cases",
     isSubMenu: false,
     subMenu: {},
   },
@@ -664,7 +664,7 @@ export const mobileNavLinks = {
   },
   CaseStudies: {
     name: "Case Studies",
-    link: "/case-studies",
+    link: "/cases",
     isSubMenu: false,
     subMenu: [],
   },

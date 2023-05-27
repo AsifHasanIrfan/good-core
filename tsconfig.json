@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/views/CaseStudy/CaseStudy.jsx", "src/views/CaseStudy/components/CaseStudyCard/CaseStudyCard.jsx", "src/views/CaseStudy/components/CasesHeader/CasesHeader.jsx", "src/views/CaseStudy/components/CasesFilter/CasesFilter.jsx", "src/views/CaseStudy/components/AllCases/AllCases.jsx", "src/views/SingleCaseStudy/components/Technologies/Technologies.jsx"  ],
   "exclude": [
     "node_modules"
   ]
