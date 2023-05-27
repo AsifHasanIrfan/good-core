@@ -1,12 +1,17 @@
-import React from "react";
+import TechnologyHero from "../../shared/TechnologyTopHero/TechnologyHero";
 import BreadCrumb from "./components/BreadCrumb/BreadCrumb";
-import Hero from "./components/Hero/Hero";
 import TechBanner from "./components/TechBanner/TechBanner";
+import { phpHeroTechArray } from "./constant";
 
 const PhpDevelopment = () => {
   return (
     <>
-      <Hero />
+      <TechnologyHero
+        highlightHeading="PHP"
+        heading="Development Company"
+        subHeading="We offer end-to-end PHP development services to create business solutions that are fast, flexible, and modern, using Laravel, Yii, Zend, and Symfony frameworks."
+        technologies={phpHeroTechArray}
+      />
       <BreadCrumb />
       <TechBanner />
     </>

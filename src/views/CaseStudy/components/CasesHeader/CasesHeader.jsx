@@ -1,0 +1,298 @@
+import { useState } from "react";
+
+const CasesHeader = () => {
+  const [searchedValue, setSearchedValue] = useState("");
+  const [suggestions, setSuggestions] = useState(null);
+
+  const countries = [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Angola",
+    "Anguilla",
+    "Antigua &amp; Barbuda",
+    "Argentina",
+    "Armenia",
+    "Aruba",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
+    "Bahamas",
+    "Bahrain",
+    "Bangladesh",
+    "Barbados",
+    "Belarus",
+    "Belgium",
+    "Belize",
+    "Benin",
+    "Bermuda",
+    "Bhutan",
+    "Bolivia",
+    "Bosnia &amp; Herzegovina",
+    "Botswana",
+    "Brazil",
+    "British Virgin Islands",
+    "Brunei",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cambodia",
+    "Cameroon",
+    "Canada",
+    "Cape Verde",
+    "Cayman Islands",
+    "Central Arfrican Republic",
+    "Chad",
+    "Chile",
+    "China",
+    "Colombia",
+    "Congo",
+    "Cook Islands",
+    "Costa Rica",
+    "Cote D Ivoire",
+    "Croatia",
+    "Cuba",
+    "Curacao",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Djibouti",
+    "Dominica",
+    "Dominican Republic",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "Equatorial Guinea",
+    "Eritrea",
+    "Estonia",
+    "Ethiopia",
+    "Falkland Islands",
+    "Faroe Islands",
+    "Fiji",
+    "Finland",
+    "France",
+    "French Polynesia",
+    "French West Indies",
+    "Gabon",
+    "Gambia",
+    "Georgia",
+    "Germany",
+    "Ghana",
+    "Gibraltar",
+    "Greece",
+    "Greenland",
+    "Grenada",
+    "Guam",
+    "Guatemala",
+    "Guernsey",
+    "Guinea",
+    "Guinea Bissau",
+    "Guyana",
+    "Haiti",
+    "Honduras",
+    "Hong Kong",
+    "Hungary",
+    "Iceland",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Ireland",
+    "Isle of Man",
+    "Israel",
+    "Italy",
+    "Jamaica",
+    "Japan",
+    "Jersey",
+    "Jordan",
+    "Kazakhstan",
+    "Kenya",
+    "Kiribati",
+    "Kosovo",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Laos",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Liechtenstein",
+    "Lithuania",
+    "Luxembourg",
+    "Macau",
+    "Macedonia",
+    "Madagascar",
+    "Malawi",
+    "Malaysia",
+    "Maldives",
+    "Mali",
+    "Malta",
+    "Marshall Islands",
+    "Mauritania",
+    "Mauritius",
+    "Mexico",
+    "Micronesia",
+    "Moldova",
+    "Monaco",
+    "Mongolia",
+    "Montenegro",
+    "Montserrat",
+    "Morocco",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
+    "Nauro",
+    "Nepal",
+    "Netherlands",
+    "Netherlands Antilles",
+    "New Caledonia",
+    "New Zealand",
+    "Nicaragua",
+    "Niger",
+    "Nigeria",
+    "North Korea",
+    "Norway",
+    "Oman",
+    "Pakistan",
+    "Palau",
+    "Palestine",
+    "Panama",
+    "Papua New Guinea",
+    "Paraguay",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Puerto Rico",
+    "Qatar",
+    "Reunion",
+    "Romania",
+    "Russia",
+    "Rwanda",
+    "Saint Pierre &amp; Miquelon",
+    "Samoa",
+    "San Marino",
+    "Sao Tome and Principe",
+    "Saudi Arabia",
+    "Senegal",
+    "Serbia",
+    "Seychelles",
+    "Sierra Leone",
+    "Singapore",
+    "Slovakia",
+    "Slovenia",
+    "Solomon Islands",
+    "Somalia",
+    "South Africa",
+    "South Korea",
+    "South Sudan",
+    "Spain",
+    "Sri Lanka",
+    "St Kitts &amp; Nevis",
+    "St Lucia",
+    "St Vincent",
+    "Sudan",
+    "Suriname",
+    "Swaziland",
+    "Sweden",
+    "Switzerland",
+    "Syria",
+    "Taiwan",
+    "Tajikistan",
+    "Tanzania",
+    "Thailand",
+    "Timor L'Este",
+    "Togo",
+    "Tonga",
+    "Trinidad &amp; Tobago",
+    "Tunisia",
+    "Turkey",
+    "Turkmenistan",
+    "Turks &amp; Caicos",
+    "Tuvalu",
+    "Uganda",
+    "Ukraine",
+    "United Arab Emirates",
+    "United Kingdom",
+    "United States of America",
+    "Uruguay",
+    "Uzbekistan",
+    "Vanuatu",
+    "Vatican City",
+    "Venezuela",
+    "Vietnam",
+    "Virgin Islands (US)",
+    "Yemen",
+    "Zambia",
+    "Zimbabwe",
+  ];
+
+  const handleChange = (event) => {
+    if (event.target.value !== "") {
+      const filteredSuggestions = countries.filter((itemData) => {
+        const value = event.target.value.toUpperCase();
+        const name = itemData.toUpperCase();
+
+        return value && name.startsWith(value) && name !== value;
+      });
+      setSearchedValue(event.target.value);
+      setSuggestions(filteredSuggestions);
+    } else {
+      setSuggestions(null);
+    }
+  };
+console.log(suggestions);
+  return (
+    <section className="bg-[url('/assets/images/company/banner.webp')] bg-cover py-[1.5rem] w-full px-[15px] mx-auto">
+      <div className="container">
+        <div className="row items-center">
+          <div className="col-md-8">
+            <h1 className="font-bold uppercase text-[2.5rem] mb-[0.5rem] leading-[1.2]">
+              Case Studies
+            </h1>
+          </div>
+          <div className="col-md-4">
+            <div className="cases-search">
+              <div className="relative right-0 p-0 bg-white shadow-[0_1px_10px_1px_rgba(0,_0,_0,_.08)] rounded-[5px]">
+                <label>
+                  <span className="hidden">Search for:</span>
+                  <input
+                    className="border-none p-[5px_10px] pr-[25px] text-[14px] min-w-[220px] w-full outline-[0] leading-[23px]"
+                    id="cases-search-input"
+                    autoComplete="off"
+                    type="search"
+                    placeholder="Search ..."
+                    title="Search for:"
+                    onChange={handleChange}
+                    onKeyDown={handleChange}
+                  />
+                </label>
+                <button
+                  type="submit"
+                  className="absolute right-[6px] border-0 bg-transparent text-[#333] text-[14px] p-[6px] outline-0"
+                >
+                  <i className="fa fa-search"></i>
+                </button>
+
+                <div className="absolute z-10 top-[33px] max-h-[150px] overflow-y-auto w-full bg-white shadow-[0_1px_10px_1px_rgba(0,_0,_0,_.08)] cases-suggestions">
+                  <ul className="p-0">
+                    {suggestions &&
+                      suggestions.map((suggestion, i) => (
+                        <li key={`suggestion_${i}`} className="p-[6px_11px] text-[15px] lowercase text-black cursor-pointer text-left text-ellipsis whitespace-nowrap overflow-hidden">
+                          {suggestion}
+                        </li>
+                      ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CasesHeader;

@@ -1,26 +1,24 @@
+import laravelIcon from "../../../assets/images/company/php/laravel-gray.webp";
+import yiiIcon from "../../../assets/images/company/php/yii-gray.webp";
+import zendIcon from "../../../assets/images/company/php/zend-gray.webp";
+import symfonyIcon from "../../../assets/images/company/php/symfony-gray.webp";
+
+// PHP website development
 export const phpHeroTechArray = [
   {
-    imgUrl: "/assets/images/technologies/php/laravel-gray.webp",
+    icon: laravelIcon,
     title: "Laravel",
-    width: 49,
-    height: 50,
   },
   {
-    imgUrl: "/assets/images/technologies/php/yii-gray.webp",
+    icon: yiiIcon,
     title: "Yii",
-    width: 46,
-    height: 50,
   },
   {
-    imgUrl: "/assets/images/technologies/php/zend-gray.webp",
+    icon: zendIcon,
     title: "Zend",
-    width: 102,
-    height: 50,
   },
   {
-    imgUrl: "/assets/images/technologies/php/symfony-gray.webp",
-    title: "Symfony",
-    width: 50,
-    height: 50,
+    icon: symfonyIcon,
+    title: "Symfony"
   },
 ];
